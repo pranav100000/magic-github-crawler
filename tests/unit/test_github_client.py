@@ -14,6 +14,6 @@ my_vcr = vcr.VCR(path_transformer=vcr.VCR.ensure_suffix(".yaml"))
 @pytest.mark.asyncio
 async def test_search_repos():
     async with GithubClient(TOKEN) as gh:
-        page = await gh.search_repos(batch=10)
+        page = await gh.search_repos(batch=10, search_query="stars:>1000")
     assert len(page.repos) == 10
     assert page.cost >= 1

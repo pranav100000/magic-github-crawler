@@ -1,6 +1,6 @@
 import aiohttp, asyncio
 import logging  # Use standard logging
-from typing import Any, TypedDict, List, Optional
+from typing import Any, List, Optional
 from pydantic import BaseModel
 from tenacity import (
     retry,
@@ -35,7 +35,7 @@ _SETTINGS = get_settings()
 _ENDPOINT = _SETTINGS.github_graphql_endpoint or "https://api.github.com/graphql"
 
 # Small delay added *before* each request to ease CPU pressure / request frequency
-INTER_REQUEST_DELAY_SECONDS = 0.25
+INTER_REQUEST_DELAY_SECONDS = 0.15
 # Estimated cost acquired *before* the request
 PRE_ACQUIRE_COST = 1
 

@@ -10,7 +10,7 @@ interactions:
     uri: https://api.github.com/graphql
   response:
     body:
-      string: '{"data":{"search":{"pageInfo":{"endCursor":"Y3Vyc29yOjEw","hasNextPage":true},"nodes":[{"databaseId":28457823,"nameWithOwner":"freeCodeCamp/freeCodeCamp","stargazerCount":417249},{"databaseId":132750724,"nameWithOwner":"codecrafters-io/build-your-own-x","stargazerCount":376220},{"databaseId":21737465,"nameWithOwner":"sindresorhus/awesome","stargazerCount":358087},{"databaseId":13491895,"nameWithOwner":"EbookFoundation/free-programming-books","stargazerCount":355790},{"databaseId":54346799,"nameWithOwner":"public-apis/public-apis","stargazerCount":338133},{"databaseId":60493101,"nameWithOwner":"jwasham/coding-interview-university","stargazerCount":316497},{"databaseId":85077558,"nameWithOwner":"kamranahmedse/developer-roadmap","stargazerCount":316441},{"databaseId":83222441,"nameWithOwner":"donnemartin/system-design-primer","stargazerCount":297459},{"databaseId":177736533,"nameWithOwner":"996icu/996.ICU","stargazerCount":270571},{"databaseId":21289110,"nameWithOwner":"vinta/awesome-python","stargazerCount":241786}]},"rateLimit":{"cost":1,"remaining":4993}}}'
+      string: '{"data":{"search":{"pageInfo":{"endCursor":"Y3Vyc29yOjEw","hasNextPage":true},"nodes":[{"databaseId":28457823,"nameWithOwner":"freeCodeCamp/freeCodeCamp","stargazerCount":417270},{"databaseId":132750724,"nameWithOwner":"codecrafters-io/build-your-own-x","stargazerCount":376352},{"databaseId":21737465,"nameWithOwner":"sindresorhus/awesome","stargazerCount":358126},{"databaseId":13491895,"nameWithOwner":"EbookFoundation/free-programming-books","stargazerCount":355814},{"databaseId":54346799,"nameWithOwner":"public-apis/public-apis","stargazerCount":338167},{"databaseId":60493101,"nameWithOwner":"jwasham/coding-interview-university","stargazerCount":316512},{"databaseId":85077558,"nameWithOwner":"kamranahmedse/developer-roadmap","stargazerCount":316506},{"databaseId":83222441,"nameWithOwner":"donnemartin/system-design-primer","stargazerCount":297484},{"databaseId":177736533,"nameWithOwner":"996icu/996.ICU","stargazerCount":270571},{"databaseId":21289110,"nameWithOwner":"vinta/awesome-python","stargazerCount":241813}]},"rateLimit":{"cost":1,"remaining":4088}}}'
     headers:
       Access-Control-Allow-Origin:
       - '*'
@@ -26,7 +26,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 29 Apr 2025 01:40:09 GMT
+      - Tue, 29 Apr 2025 08:15:41 GMT
       Referrer-Policy:
       - origin-when-cross-origin, strict-origin-when-cross-origin
       Server:
@@ -44,17 +44,17 @@ interactions:
       X-GitHub-Media-Type:
       - github.v4; format=json
       X-GitHub-Request-Id:
-      - E67E:DE589:19B8D96:1A8D68D:68102DF8
+      - CBDF:2074B0:2CBEFA7:2E3CC56:68108AAC
       X-RateLimit-Limit:
       - '5000'
       X-RateLimit-Remaining:
-      - '4993'
+      - '4088'
       X-RateLimit-Reset:
-      - '1745892190'
+      - '1745916287'
       X-RateLimit-Resource:
       - graphql
       X-RateLimit-Used:
-      - '7'
+      - '912'
       X-XSS-Protection:
       - '0'
     status:

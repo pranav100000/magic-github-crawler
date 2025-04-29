@@ -10,7 +10,7 @@ interactions:
     uri: https://api.github.com/graphql
   response:
     body:
-      string: '{"data":{"search":{"pageInfo":{"endCursor":"Y3Vyc29yOjEwMA==","hasNextPage":true},"nodes":[{"databaseId":28457823,"nameWithOwner":"freeCodeCamp/freeCodeCamp","stargazerCount":417251},{"databaseId":132750724,"nameWithOwner":"codecrafters-io/build-your-own-x","stargazerCount":376229},{"databaseId":21737465,"nameWithOwner":"sindresorhus/awesome","stargazerCount":358088},{"databaseId":13491895,"nameWithOwner":"EbookFoundation/free-programming-books","stargazerCount":355791},{"databaseId":54346799,"nameWithOwner":"public-apis/public-apis","stargazerCount":338133},{"databaseId":60493101,"nameWithOwner":"jwasham/coding-interview-university","stargazerCount":316497},{"databaseId":85077558,"nameWithOwner":"kamranahmedse/developer-roadmap","stargazerCount":316443},{"databaseId":83222441,"nameWithOwner":"donnemartin/system-design-primer","stargazerCount":297459},{"databaseId":177736533,"nameWithOwner":"996icu/996.ICU","stargazerCount":270572},{"databaseId":21289110,"nameWithOwner":"vinta/awesome-python","stargazerCount":241788},{"databaseId":10270250,"nameWithOwner":"facebook/react","stargazerCount":235006},{"databaseId":36633370,"nameWithOwner":"awesome-selfhosted/awesome-selfhosted","stargazerCount":226464},{"databaseId":88011908,"nameWithOwner":"practical-tutorials/project-based-learning","stargazerCount":225684},{"databaseId":11730342,"nameWithOwner":"vuejs/vue","stargazerCount":208778},{"databaseId":63476337,"nameWithOwner":"TheAlgorithms/Python","stargazerCount":200008},{"databaseId":2325298,"nameWithOwner":"torvalds/linux","stargazerCount":192472},{"databaseId":126577260,"nameWithOwner":"trekhleb/javascript-algorithms","stargazerCount":191086},{"databaseId":45717250,"nameWithOwner":"tensorflow/tensorflow","stargazerCount":189693},{"databaseId":14440270,"nameWithOwner":"getify/You-Dont-Know-JS","stargazerCount":181903},{"databaseId":121395510,"nameWithOwner":"CyC2018/CS-Notes","stargazerCount":179964},{"databaseId":19415064,"nameWithOwner":"ossu/computer-science","stargazerCount":178701},{"databaseId":291137,"nameWithOwner":"ohmyzsh/ohmyzsh","stargazerCount":177989},{"databaseId":614765452,"nameWithOwner":"Significant-Gravitas/AutoGPT","stargazerCount":174872},{"databaseId":2126244,"nameWithOwner":"twbs/bootstrap","stargazerCount":172253},{"databaseId":41881900,"nameWithOwner":"microsoft/vscode","stargazerCount":170520},{"databaseId":31792824,"nameWithOwner":"flutter/flutter","stargazerCount":169995},{"databaseId":138393139,"nameWithOwner":"trimstray/the-book-of-secret-knowledge","stargazerCount":167393},{"databaseId":1062897,"nameWithOwner":"github/gitignore","stargazerCount":166091},{"databaseId":123458551,"nameWithOwner":"jackfrued/Python-100-Days","stargazerCount":164863},{"databaseId":35955666,"nameWithOwner":"jlevy/the-art-of-command-line","stargazerCount":155771},{"databaseId":527591471,"nameWithOwner":"AUTOMATIC1111/stable-diffusion-webui","stargazerCount":151838},{"databaseId":132464395,"nameWithOwner":"Snailclimb/JavaGuide","stargazerCount":149386},{"databaseId":6498492,"nameWithOwner":"airbnb/javascript","stargazerCount":146613},{"databaseId":155220641,"nameWithOwner":"huggingface/transformers","stargazerCount":143627},{"databaseId":21540759,"nameWithOwner":"avelino/awesome-go","stargazerCount":142674},{"databaseId":658928958,"nameWithOwner":"ollama/ollama","stargazerCount":138892},{"databaseId":1039520,"nameWithOwner":"ytdl-org/youtube-dl","stargazerCount":135383},{"databaseId":233472199,"nameWithOwner":"massgravel/Microsoft-Activation-Scripts","stargazerCount":132698},{"databaseId":70107786,"nameWithOwner":"vercel/next.js","stargazerCount":131429},{"databaseId":241576270,"nameWithOwner":"labuladong/fucking-algorithm","stargazerCount":127735},{"databaseId":23096959,"nameWithOwner":"golang/go","stargazerCount":127464},{"databaseId":62607227,"nameWithOwner":"yangshun/tech-interview-handbook","stargazerCount":125804},{"databaseId":574523116,"nameWithOwner":"f/awesome-chatgpt-prompts","stargazerCount":123662},{"databaseId":112507086,"nameWithOwner":"Chalarangelo/30-seconds-of-code","stargazerCount":123494},{"databaseId":29028775,"nameWithOwner":"facebook/react-native","stargazerCount":121726},{"databaseId":111583593,"nameWithOwner":"Genymobile/scrcpy","stargazerCount":121258},{"databaseId":184456251,"nameWithOwner":"microsoft/PowerToys","stargazerCount":117839},{"databaseId":9384267,"nameWithOwner":"electron/electron","stargazerCount":116563},{"databaseId":20580498,"nameWithOwner":"kubernetes/kubernetes","stargazerCount":114735},{"databaseId":14098069,"nameWithOwner":"justjavac/free-programming-books-zh_CN","stargazerCount":113494},{"databaseId":561730219,"nameWithOwner":"krahets/hello-algo","stargazerCount":112017},{"databaseId":27193779,"nameWithOwner":"nodejs/node","stargazerCount":110850},{"databaseId":943149,"nameWithOwner":"d3/d3","stargazerCount":110490},{"databaseId":307260205,"nameWithOwner":"yt-dlp/yt-dlp","stargazerCount":109942},{"databaseId":23088740,"nameWithOwner":"axios/axios","stargazerCount":106747},{"databaseId":552661142,"nameWithOwner":"langchain-ai/langchain","stargazerCount":106532},{"databaseId":576201,"nameWithOwner":"mrdoob/three.js","stargazerCount":105938},{"databaseId":20929025,"nameWithOwner":"microsoft/TypeScript","stargazerCount":104209},{"databaseId":63537249,"nameWithOwner":"facebook/create-react-app","stargazerCount":103182},{"databaseId":724712,"nameWithOwner":"rust-lang/rust","stargazerCount":103095},{"databaseId":133442384,"nameWithOwner":"denoland/deno","stargazerCount":102794},{"databaseId":103633984,"nameWithOwner":"goldbergyoni/nodebestpractices","stargazerCount":102446},{"databaseId":58028038,"nameWithOwner":"521xueweihan/HelloGitHub","stargazerCount":102070},{"databaseId":231283452,"nameWithOwner":"excalidraw/excalidraw","stargazerCount":98563},{"databaseId":100060912,"nameWithOwner":"microsoft/terminal","stargazerCount":97923},{"databaseId":24195339,"nameWithOwner":"angular/angular","stargazerCount":97605},{"databaseId":15634981,"nameWithOwner":"godotengine/godot","stargazerCount":96673},{"databaseId":908531752,"nameWithOwner":"deepseek-ai/DeepSeek-V3","stargazerCount":96196},{"databaseId":23083156,"nameWithOwner":"mui/material-ui","stargazerCount":95465},{"databaseId":32484381,"nameWithOwner":"ripienaar/free-for-dev","stargazerCount":95044},{"databaseId":626805178,"nameWithOwner":"langgenius/dify","stargazerCount":94875},{"databaseId":34526884,"nameWithOwner":"ant-design/ant-design","stargazerCount":94430},{"databaseId":48378947,"nameWithOwner":"fatedier/frp","stargazerCount":93208},{"databaseId":74791366,"nameWithOwner":"ryanmcdermott/clean-code-javascript","stargazerCount":92848},{"databaseId":157616880,"nameWithOwner":"iptv-org/iptv","stargazerCount":92815},{"databaseId":15204860,"nameWithOwner":"papers-we-love/papers-we-love","stargazerCount":92631},{"databaseId":196701619,"nameWithOwner":"tauri-apps/tauri","stargazerCount":91943},{"databaseId":701547123,"nameWithOwner":"open-webui/open-webui","stargazerCount":91802},{"databaseId":55076063,"nameWithOwner":"Hack-with-Github/Awesome-Hacking","stargazerCount":91775},{"databaseId":33614304,"nameWithOwner":"nvbn/thefuck","stargazerCount":91676},{"databaseId":22790488,"nameWithOwner":"iluwatar/java-design-patterns","stargazerCount":91413},{"databaseId":90796663,"nameWithOwner":"puppeteer/puppeteer","stargazerCount":90506},{"databaseId":65600975,"nameWithOwner":"pytorch/pytorch","stargazerCount":89483},{"databaseId":88464704,"nameWithOwner":"PanJiaChen/vue-element-admin","stargazerCount":89223},{"databaseId":16408992,"nameWithOwner":"neovim/neovim","stargazerCount":89034},{"databaseId":919443098,"nameWithOwner":"deepseek-ai/DeepSeek-R1","stargazerCount":88913},{"databaseId":311525798,"nameWithOwner":"microsoft/Web-Dev-For-Beginners","stargazerCount":87564},{"databaseId":299354207,"nameWithOwner":"rustdesk/rustdesk","stargazerCount":87496},{"databaseId":106017343,"nameWithOwner":"tailwindlabs/tailwindcss","stargazerCount":87466},{"databaseId":101296881,"nameWithOwner":"mtdvio/every-programmer-should-know","stargazerCount":86975},{"databaseId":193215554,"nameWithOwner":"n8n-io/n8n","stargazerCount":86930},{"databaseId":54173593,"nameWithOwner":"storybookjs/storybook","stargazerCount":86485},{"databaseId":585146387,"nameWithOwner":"shadcn-ui/ui","stargazerCount":86088},{"databaseId":612230,"nameWithOwner":"nvm-sh/nvm","stargazerCount":84232},{"databaseId":160919119,"nameWithOwner":"fastapi/fastapi","stargazerCount":83861},{"databaseId":4164482,"nameWithOwner":"django/django","stargazerCount":83354},{"databaseId":1181927,"nameWithOwner":"bitcoin/bitcoin","stargazerCount":83079},{"databaseId":612344730,"nameWithOwner":"ChatGPTNextWeb/NextChat","stargazerCount":83074},{"databaseId":172562475,"nameWithOwner":"florinpop17/app-ideas","stargazerCount":83052},{"databaseId":74293321,"nameWithOwner":"sveltejs/svelte","stargazerCount":82411}]},"rateLimit":{"cost":1,"remaining":4986}}}'
+      string: '{"data":{"search":{"pageInfo":{"endCursor":"Y3Vyc29yOjM=","hasNextPage":false},"nodes":[{"databaseId":965415649,"nameWithOwner":"openai/codex","stargazerCount":20853},{"databaseId":969010919,"nameWithOwner":"nari-labs/dia","stargazerCount":13093},{"databaseId":965159463,"nameWithOwner":"lllyasviel/FramePack","stargazerCount":10981}]},"rateLimit":{"cost":1,"remaining":4160}}}'
     headers:
       Access-Control-Allow-Origin:
       - '*'
@@ -26,7 +26,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 29 Apr 2025 02:03:07 GMT
+      - Tue, 29 Apr 2025 08:12:36 GMT
       Referrer-Policy:
       - origin-when-cross-origin, strict-origin-when-cross-origin
       Server:
@@ -44,17 +44,17 @@ interactions:
       X-GitHub-Media-Type:
       - github.v4; format=json
       X-GitHub-Request-Id:
-      - E9F1:1057E7:1AF2B6C:1BD10BE:68103358
+      - CB92:160700:2C16175:2D91F0D:681089F4
       X-RateLimit-Limit:
       - '5000'
       X-RateLimit-Remaining:
-      - '4986'
+      - '4160'
       X-RateLimit-Reset:
-      - '1745892190'
+      - '1745916287'
       X-RateLimit-Resource:
       - graphql
       X-RateLimit-Used:
-      - '14'
+      - '840'
       X-XSS-Protection:
       - '0'
     status:
@@ -71,7 +71,7 @@ interactions:
     uri: https://api.github.com/graphql
   response:
     body:
-      string: '{"data":{"search":{"pageInfo":{"endCursor":"Y3Vyc29yOjIwMA==","hasNextPage":true},"nodes":[{"databaseId":63539055,"nameWithOwner":"jaywcjlove/awesome-mac","stargazerCount":82386},{"databaseId":20904437,"nameWithOwner":"gin-gonic/gin","stargazerCount":81984},{"databaseId":5108051,"nameWithOwner":"opencv/opencv","stargazerCount":81920},{"databaseId":214587193,"nameWithOwner":"supabase/supabase","stargazerCount":81706},{"databaseId":2561582,"nameWithOwner":"animate-css/animate.css","stargazerCount":81631},{"databaseId":52631841,"nameWithOwner":"gothinkster/realworld","stargazerCount":81499},{"databaseId":243950408,"nameWithOwner":"Anduin2017/HowToCook","stargazerCount":81454},{"databaseId":655806940,"nameWithOwner":"microsoft/generative-ai-for-beginners","stargazerCount":80854},{"databaseId":537603333,"nameWithOwner":"openai/whisper","stargazerCount":80828},{"databaseId":1863329,"nameWithOwner":"laravel/laravel","stargazerCount":80729},{"databaseId":11180687,"nameWithOwner":"gohugoio/hugo","stargazerCount":80148},{"databaseId":127988011,"nameWithOwner":"macrozheng/mall","stargazerCount":80091},{"databaseId":612354784,"nameWithOwner":"ggml-org/llama.cpp","stargazerCount":78925},{"databaseId":199570071,"nameWithOwner":"2dust/v2rayN","stargazerCount":78909},{"databaseId":26500787,"nameWithOwner":"tonsky/FiraCode","stargazerCount":78838},{"databaseId":26066727,"nameWithOwner":"mermaid-js/mermaid","stargazerCount":78679},{"databaseId":12888993,"nameWithOwner":"home-assistant/core","stargazerCount":78334},{"databaseId":357728969,"nameWithOwner":"oven-sh/bun","stargazerCount":77731},{"databaseId":151834062,"nameWithOwner":"doocs/advanced-java","stargazerCount":77527},{"databaseId":51117837,"nameWithOwner":"tensorflow/models","stargazerCount":77500},{"databaseId":32689863,"nameWithOwner":"3b1b/manim","stargazerCount":77079},{"databaseId":6296790,"nameWithOwner":"spring-projects/spring-boot","stargazerCount":76945},{"databaseId":160640094,"nameWithOwner":"MisterBooo/LeetCodeAnimation","stargazerCount":75875},{"databaseId":589831718,"nameWithOwner":"comfyanonymous/ComfyUI","stargazerCount":75514},{"databaseId":212639071,"nameWithOwner":"bregman-arie/devops-exercises","stargazerCount":75368},{"databaseId":3470471,"nameWithOwner":"FortAwesome/Font-Awesome","stargazerCount":75143},{"databaseId":47018239,"nameWithOwner":"DopplerHQ/awesome-interview-questions","stargazerCount":74580},{"databaseId":10744183,"nameWithOwner":"netdata/netdata","stargazerCount":74415},{"databaseId":14747598,"nameWithOwner":"typicode/json-server","stargazerCount":74118},{"databaseId":44882201,"nameWithOwner":"MunGell/awesome-for-beginners","stargazerCount":73532},{"databaseId":619959033,"nameWithOwner":"nomic-ai/gpt4all","stargazerCount":73211},{"databaseId":278335273,"nameWithOwner":"anuraghazra/github-readme-stats","stargazerCount":72845},{"databaseId":44571718,"nameWithOwner":"vuejs/awesome-vue","stargazerCount":72828},{"databaseId":145553672,"nameWithOwner":"fighting41love/funNLP","stargazerCount":72723},{"databaseId":507775,"nameWithOwner":"elastic/elasticsearch","stargazerCount":72504},{"databaseId":257485422,"nameWithOwner":"vitejs/vite","stargazerCount":72391},{"databaseId":221981891,"nameWithOwner":"microsoft/playwright","stargazerCount":72184},{"databaseId":343965132,"nameWithOwner":"microsoft/ML-For-Beginners","stargazerCount":72041},{"databaseId":693342566,"nameWithOwner":"ByteByteGoHq/system-design-101","stargazerCount":71917},{"databaseId":203587744,"nameWithOwner":"hoppscotch/hoppscotch","stargazerCount":71440},{"databaseId":172953845,"nameWithOwner":"coder/code-server","stargazerCount":71420},{"databaseId":80945428,"nameWithOwner":"nestjs/nest","stargazerCount":70630},{"databaseId":523379232,"nameWithOwner":"CompVis/stable-diffusion","stargazerCount":70474},{"databaseId":107111421,"nameWithOwner":"thedaviddias/Front-End-Checklist","stargazerCount":69978},{"databaseId":718741813,"nameWithOwner":"abi/screenshot-to-code","stargazerCount":69757},{"databaseId":13807606,"nameWithOwner":"junegunn/fzf","stargazerCount":69754},{"databaseId":14712850,"nameWithOwner":"syncthing/syncthing","stargazerCount":69724},{"databaseId":7691631,"nameWithOwner":"moby/moby","stargazerCount":69638},{"databaseId":596892,"nameWithOwner":"pallets/flask","stargazerCount":69427},{"databaseId":156018,"nameWithOwner":"redis/redis","stargazerCount":68868},{"databaseId":101138315,"nameWithOwner":"d2l-ai/d2l-zh","stargazerCount":68859},{"databaseId":1861458,"nameWithOwner":"hakimel/reveal.js","stargazerCount":68788},{"databaseId":71583602,"nameWithOwner":"Developer-Y/cs-video-courses","stargazerCount":68598},{"databaseId":44838949,"nameWithOwner":"swiftlang/swift","stargazerCount":68505},{"databaseId":596115135,"nameWithOwner":"base/node","stargazerCount":68498},{"databaseId":616372661,"nameWithOwner":"binary-husky/gpt_academic","stargazerCount":68303},{"databaseId":382496361,"nameWithOwner":"louislam/uptime-kuma","stargazerCount":67846},{"databaseId":21872392,"nameWithOwner":"josephmisiti/awesome-machine-learning","stargazerCount":67803},{"databaseId":22670857,"nameWithOwner":"enaqx/awesome-react","stargazerCount":67777},{"databaseId":15111821,"nameWithOwner":"grafana/grafana","stargazerCount":67716},{"databaseId":23357588,"nameWithOwner":"protocolbuffers/protobuf","stargazerCount":67406},{"databaseId":237159,"nameWithOwner":"expressjs/express","stargazerCount":66859},{"databaseId":83999700,"nameWithOwner":"sdmg15/Best-websites-a-programmer-should-visit","stargazerCount":66666},{"databaseId":81598961,"nameWithOwner":"python/cpython","stargazerCount":66622},{"databaseId":22887094,"nameWithOwner":"tesseract-ocr/tesseract","stargazerCount":66456},{"databaseId":43441403,"nameWithOwner":"strapi/strapi","stargazerCount":66408},{"databaseId":246335987,"nameWithOwner":"ventoy/Ventoy","stargazerCount":66307},{"databaseId":39464018,"nameWithOwner":"apache/superset","stargazerCount":65963},{"databaseId":8843683,"nameWithOwner":"chartjs/Chart.js","stargazerCount":65779},{"databaseId":3678731,"nameWithOwner":"webpack/webpack","stargazerCount":65239},{"databaseId":147350463,"nameWithOwner":"leonardomso/33-js-concepts","stargazerCount":65098},{"databaseId":22067521,"nameWithOwner":"ocornut/imgui","stargazerCount":65078},{"databaseId":71220757,"nameWithOwner":"swisskyrepo/PayloadsAllTheThings","stargazerCount":65000},{"databaseId":3638964,"nameWithOwner":"ansible/ansible","stargazerCount":64855},{"databaseId":455229168,"nameWithOwner":"immich-app/immich","stargazerCount":64679},{"databaseId":620936652,"nameWithOwner":"xtekky/gpt4free","stargazerCount":64123},{"databaseId":81975372,"nameWithOwner":"kdn251/interviews","stargazerCount":64098},{"databaseId":162998479,"nameWithOwner":"sherlock-project/sherlock","stargazerCount":63984},{"databaseId":29207621,"nameWithOwner":"caddyserver/caddy","stargazerCount":63908},{"databaseId":191529732,"nameWithOwner":"lydiahallie/javascript-questions","stargazerCount":63845},{"databaseId":13233158,"nameWithOwner":"obsproject/obs-studio","stargazerCount":63799},{"databaseId":468576060,"nameWithOwner":"openai/openai-cookbook","stargazerCount":63602},{"databaseId":77213120,"nameWithOwner":"Eugeny/tabby","stargazerCount":63397},{"databaseId":9185792,"nameWithOwner":"apache/echarts","stargazerCount":63378},{"databaseId":21935031,"nameWithOwner":"fffaraz/awesome-cpp","stargazerCount":63307},{"databaseId":619859161,"nameWithOwner":"twitter/the-algorithm","stargazerCount":63126},{"databaseId":419347358,"nameWithOwner":"PKUFlyingPig/cs-self-learning","stargazerCount":63019},{"databaseId":26898879,"nameWithOwner":"awesomedata/awesome-public-datasets","stargazerCount":62991},{"databaseId":33015583,"nameWithOwner":"keras-team/keras","stargazerCount":62938},{"databaseId":120538304,"nameWithOwner":"kelseyhightower/nocode","stargazerCount":62628},{"databaseId":377496562,"nameWithOwner":"AppFlowy-IO/AppFlowy","stargazerCount":62520},{"databaseId":3482588,"nameWithOwner":"danielmiessler/SecLists","stargazerCount":62440},{"databaseId":1334369,"nameWithOwner":"resume/resume.github.com","stargazerCount":62397},{"databaseId":331107018,"nameWithOwner":"FuelLabs/sway","stargazerCount":62321},{"databaseId":557980,"nameWithOwner":"socketio/socket.io","stargazerCount":61965},{"databaseId":843222,"nameWithOwner":"scikit-learn/scikit-learn","stargazerCount":61879},{"databaseId":18408635,"nameWithOwner":"chrislgarry/Apollo-11","stargazerCount":61712},{"databaseId":115478820,"nameWithOwner":"binhnguyennus/awesome-scalability","stargazerCount":61646},{"databaseId":63477660,"nameWithOwner":"TheAlgorithms/Java","stargazerCount":61478},{"databaseId":36535156,"nameWithOwner":"reduxjs/redux","stargazerCount":61175}]},"rateLimit":{"cost":1,"remaining":4985}}}'
+      string: '{"data":{"search":{"pageInfo":{"endCursor":"Y3Vyc29yOjg=","hasNextPage":false},"nodes":[{"databaseId":943934999,"nameWithOwner":"mannaandpoem/OpenManus","stargazerCount":44906},{"databaseId":943398999,"nameWithOwner":"x1xhlol/system-prompts-and-models-of-ai-tools","stargazerCount":36152},{"databaseId":942114501,"nameWithOwner":"camel-ai/owl","stargazerCount":15982},{"databaseId":954873280,"nameWithOwner":"google/A2A","stargazerCount":13760},{"databaseId":942771284,"nameWithOwner":"github/github-mcp-server","stargazerCount":12600},{"databaseId":942497635,"nameWithOwner":"lynx-family/lynx","stargazerCount":12103},{"databaseId":949271792,"nameWithOwner":"mindverse/Second-Me","stargazerCount":11528},{"databaseId":944414751,"nameWithOwner":"ahujasid/blender-mcp","stargazerCount":10585}]},"rateLimit":{"cost":1,"remaining":4157}}}'
     headers:
       Access-Control-Allow-Origin:
       - '*'
@@ -87,7 +87,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 29 Apr 2025 02:03:12 GMT
+      - Tue, 29 Apr 2025 08:12:37 GMT
       Referrer-Policy:
       - origin-when-cross-origin, strict-origin-when-cross-origin
       Server:
@@ -105,17 +105,749 @@ interactions:
       X-GitHub-Media-Type:
       - github.v4; format=json
       X-GitHub-Request-Id:
-      - E9F1:1057E7:1AF39A3:1BD1F76:6810335B
+      - CB92:160700:2C163A4:2D92143:681089F4
       X-RateLimit-Limit:
       - '5000'
       X-RateLimit-Remaining:
-      - '4985'
+      - '4157'
       X-RateLimit-Reset:
-      - '1745892190'
+      - '1745916287'
       X-RateLimit-Resource:
       - graphql
       X-RateLimit-Used:
-      - '15'
+      - '843'
+      X-XSS-Protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - Bearer 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
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://api.github.com/graphql
+  response:
+    body:
+      string: '{"data":{"search":{"pageInfo":{"endCursor":"Y3Vyc29yOjQ=","hasNextPage":false},"nodes":[{"databaseId":926861272,"nameWithOwner":"dzhng/deep-research","stargazerCount":15834},{"databaseId":939470275,"nameWithOwner":"SesameAILabs/csm","stargazerCount":12875},{"databaseId":936473202,"nameWithOwner":"deepseek-ai/FlashMLA","stargazerCount":11500},{"databaseId":938717878,"nameWithOwner":"Wan-Video/Wan2.1","stargazerCount":10740}]},"rateLimit":{"cost":1,"remaining":4156}}}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO,
+        X-GitHub-Request-Id, Deprecation, Sunset
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 29 Apr 2025 08:12:38 GMT
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - github.com
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding, Accept, X-Requested-With
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Media-Type:
+      - github.v4; format=json
+      X-GitHub-Request-Id:
+      - CB92:160700:2C166CE:2D92492:681089F5
+      X-RateLimit-Limit:
+      - '5000'
+      X-RateLimit-Remaining:
+      - '4156'
+      X-RateLimit-Reset:
+      - '1745916287'
+      X-RateLimit-Resource:
+      - graphql
+      X-RateLimit-Used:
+      - '844'
+      X-XSS-Protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - Bearer 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
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://api.github.com/graphql
+  response:
+    body:
+      string: '{"data":{"search":{"pageInfo":{"endCursor":"Y3Vyc29yOjYz","hasNextPage":false},"nodes":[{"databaseId":28457823,"nameWithOwner":"freeCodeCamp/freeCodeCamp","stargazerCount":417270},{"databaseId":132750724,"nameWithOwner":"codecrafters-io/build-your-own-x","stargazerCount":376351},{"databaseId":21737465,"nameWithOwner":"sindresorhus/awesome","stargazerCount":358125},{"databaseId":13491895,"nameWithOwner":"EbookFoundation/free-programming-books","stargazerCount":355814},{"databaseId":54346799,"nameWithOwner":"public-apis/public-apis","stargazerCount":338166},{"databaseId":60493101,"nameWithOwner":"jwasham/coding-interview-university","stargazerCount":316511},{"databaseId":85077558,"nameWithOwner":"kamranahmedse/developer-roadmap","stargazerCount":316504},{"databaseId":83222441,"nameWithOwner":"donnemartin/system-design-primer","stargazerCount":297484},{"databaseId":177736533,"nameWithOwner":"996icu/996.ICU","stargazerCount":270571},{"databaseId":21289110,"nameWithOwner":"vinta/awesome-python","stargazerCount":241812},{"databaseId":10270250,"nameWithOwner":"facebook/react","stargazerCount":235010},{"databaseId":36633370,"nameWithOwner":"awesome-selfhosted/awesome-selfhosted","stargazerCount":226492},{"databaseId":88011908,"nameWithOwner":"practical-tutorials/project-based-learning","stargazerCount":225722},{"databaseId":11730342,"nameWithOwner":"vuejs/vue","stargazerCount":208779},{"databaseId":63476337,"nameWithOwner":"TheAlgorithms/Python","stargazerCount":200016},{"databaseId":2325298,"nameWithOwner":"torvalds/linux","stargazerCount":192494},{"databaseId":126577260,"nameWithOwner":"trekhleb/javascript-algorithms","stargazerCount":191086},{"databaseId":45717250,"nameWithOwner":"tensorflow/tensorflow","stargazerCount":189697},{"databaseId":14440270,"nameWithOwner":"getify/You-Dont-Know-JS","stargazerCount":181906},{"databaseId":121395510,"nameWithOwner":"CyC2018/CS-Notes","stargazerCount":179970},{"databaseId":19415064,"nameWithOwner":"ossu/computer-science","stargazerCount":178712},{"databaseId":291137,"nameWithOwner":"ohmyzsh/ohmyzsh","stargazerCount":177995},{"databaseId":614765452,"nameWithOwner":"Significant-Gravitas/AutoGPT","stargazerCount":174883},{"databaseId":2126244,"nameWithOwner":"twbs/bootstrap","stargazerCount":172257},{"databaseId":41881900,"nameWithOwner":"microsoft/vscode","stargazerCount":170536},{"databaseId":31792824,"nameWithOwner":"flutter/flutter","stargazerCount":170001},{"databaseId":138393139,"nameWithOwner":"trimstray/the-book-of-secret-knowledge","stargazerCount":167507},{"databaseId":1062897,"nameWithOwner":"github/gitignore","stargazerCount":166098},{"databaseId":123458551,"nameWithOwner":"jackfrued/Python-100-Days","stargazerCount":164886},{"databaseId":35955666,"nameWithOwner":"jlevy/the-art-of-command-line","stargazerCount":155770},{"databaseId":527591471,"nameWithOwner":"AUTOMATIC1111/stable-diffusion-webui","stargazerCount":151847},{"databaseId":132464395,"nameWithOwner":"Snailclimb/JavaGuide","stargazerCount":149394},{"databaseId":6498492,"nameWithOwner":"airbnb/javascript","stargazerCount":146617},{"databaseId":155220641,"nameWithOwner":"huggingface/transformers","stargazerCount":143646},{"databaseId":21540759,"nameWithOwner":"avelino/awesome-go","stargazerCount":142685},{"databaseId":658928958,"nameWithOwner":"ollama/ollama","stargazerCount":138958},{"databaseId":1039520,"nameWithOwner":"ytdl-org/youtube-dl","stargazerCount":135391},{"databaseId":233472199,"nameWithOwner":"massgravel/Microsoft-Activation-Scripts","stargazerCount":132730},{"databaseId":70107786,"nameWithOwner":"vercel/next.js","stargazerCount":131440},{"databaseId":241576270,"nameWithOwner":"labuladong/fucking-algorithm","stargazerCount":127739},{"databaseId":23096959,"nameWithOwner":"golang/go","stargazerCount":127467},{"databaseId":62607227,"nameWithOwner":"yangshun/tech-interview-handbook","stargazerCount":125812},{"databaseId":574523116,"nameWithOwner":"f/awesome-chatgpt-prompts","stargazerCount":123687},{"databaseId":112507086,"nameWithOwner":"Chalarangelo/30-seconds-of-code","stargazerCount":123496},{"databaseId":29028775,"nameWithOwner":"facebook/react-native","stargazerCount":121729},{"databaseId":111583593,"nameWithOwner":"Genymobile/scrcpy","stargazerCount":121266},{"databaseId":184456251,"nameWithOwner":"microsoft/PowerToys","stargazerCount":117849},{"databaseId":9384267,"nameWithOwner":"electron/electron","stargazerCount":116569},{"databaseId":20580498,"nameWithOwner":"kubernetes/kubernetes","stargazerCount":114743},{"databaseId":14098069,"nameWithOwner":"justjavac/free-programming-books-zh_CN","stargazerCount":113496},{"databaseId":561730219,"nameWithOwner":"krahets/hello-algo","stargazerCount":112026},{"databaseId":27193779,"nameWithOwner":"nodejs/node","stargazerCount":110853},{"databaseId":943149,"nameWithOwner":"d3/d3","stargazerCount":110497},{"databaseId":307260205,"nameWithOwner":"yt-dlp/yt-dlp","stargazerCount":109984},{"databaseId":23088740,"nameWithOwner":"axios/axios","stargazerCount":106748},{"databaseId":552661142,"nameWithOwner":"langchain-ai/langchain","stargazerCount":106569},{"databaseId":576201,"nameWithOwner":"mrdoob/three.js","stargazerCount":105947},{"databaseId":20929025,"nameWithOwner":"microsoft/TypeScript","stargazerCount":104213},{"databaseId":63537249,"nameWithOwner":"facebook/create-react-app","stargazerCount":103183},{"databaseId":724712,"nameWithOwner":"rust-lang/rust","stargazerCount":103104},{"databaseId":133442384,"nameWithOwner":"denoland/deno","stargazerCount":102798},{"databaseId":103633984,"nameWithOwner":"goldbergyoni/nodebestpractices","stargazerCount":102449},{"databaseId":58028038,"nameWithOwner":"521xueweihan/HelloGitHub","stargazerCount":102086}]},"rateLimit":{"cost":1,"remaining":4159}}}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO,
+        X-GitHub-Request-Id, Deprecation, Sunset
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 29 Apr 2025 08:12:39 GMT
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - github.com
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding, Accept, X-Requested-With
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Media-Type:
+      - github.v4; format=json
+      X-GitHub-Request-Id:
+      - CB94:1296F5:2BF376F:2D70623:681089F4
+      X-RateLimit-Limit:
+      - '5000'
+      X-RateLimit-Remaining:
+      - '4159'
+      X-RateLimit-Reset:
+      - '1745916287'
+      X-RateLimit-Resource:
+      - graphql
+      X-RateLimit-Used:
+      - '841'
+      X-XSS-Protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - Bearer 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
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://api.github.com/graphql
+  response:
+    body:
+      string: '{"data":{"search":{"pageInfo":{"endCursor":"Y3Vyc29yOjY=","hasNextPage":false},"nodes":[{"databaseId":921777121,"nameWithOwner":"huggingface/open-r1","stargazerCount":24189},{"databaseId":915198910,"nameWithOwner":"yeongpin/cursor-free-vip","stargazerCount":22493},{"databaseId":917868934,"nameWithOwner":"huggingface/agents-course","stargazerCount":16916},{"databaseId":918932603,"nameWithOwner":"bytedance/UI-TARS-desktop","stargazerCount":12972},{"databaseId":910986056,"nameWithOwner":"browser-use/web-ui","stargazerCount":12609},{"databaseId":920152532,"nameWithOwner":"Jiayi-Pan/TinyZero","stargazerCount":11676}]},"rateLimit":{"cost":1,"remaining":4155}}}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO,
+        X-GitHub-Request-Id, Deprecation, Sunset
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 29 Apr 2025 08:12:39 GMT
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - github.com
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding, Accept, X-Requested-With
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Media-Type:
+      - github.v4; format=json
+      X-GitHub-Request-Id:
+      - CB92:160700:2C16910:2D926E3:681089F6
+      X-RateLimit-Limit:
+      - '5000'
+      X-RateLimit-Remaining:
+      - '4155'
+      X-RateLimit-Reset:
+      - '1745916287'
+      X-RateLimit-Resource:
+      - graphql
+      X-RateLimit-Used:
+      - '845'
+      X-XSS-Protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - Bearer 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
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://api.github.com/graphql
+  response:
+    body:
+      string: '{"data":{"search":{"pageInfo":{"endCursor":"Y3Vyc29yOjM=","hasNextPage":false},"nodes":[{"databaseId":900627378,"nameWithOwner":"yuaotian/go-cursor-help","stargazerCount":20254},{"databaseId":898968194,"nameWithOwner":"huggingface/smolagents","stargazerCount":17715},{"databaseId":903700733,"nameWithOwner":"ahmedkhaleel2004/gitdiagram","stargazerCount":10922}]},"rateLimit":{"cost":1,"remaining":4154}}}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO,
+        X-GitHub-Request-Id, Deprecation, Sunset
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 29 Apr 2025 08:12:40 GMT
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - github.com
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding, Accept, X-Requested-With
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Media-Type:
+      - github.v4; format=json
+      X-GitHub-Request-Id:
+      - CB94:1296F5:2BF4188:2D710B7:681089F7
+      X-RateLimit-Limit:
+      - '5000'
+      X-RateLimit-Remaining:
+      - '4154'
+      X-RateLimit-Reset:
+      - '1745916287'
+      X-RateLimit-Resource:
+      - graphql
+      X-RateLimit-Used:
+      - '846'
+      X-XSS-Protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - Bearer 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
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://api.github.com/graphql
+  response:
+    body:
+      string: '{"data":{"search":{"pageInfo":{"endCursor":"Y3Vyc29yOjc=","hasNextPage":false},"nodes":[{"databaseId":896335270,"nameWithOwner":"punkpeye/awesome-mcp-servers","stargazerCount":44599},{"databaseId":890668799,"nameWithOwner":"modelcontextprotocol/servers","stargazerCount":42087},{"databaseId":883252811,"nameWithOwner":"inkonchain/ink-kit","stargazerCount":36605},{"databaseId":896144595,"nameWithOwner":"virattt/ai-hedge-fund","stargazerCount":26687},{"databaseId":895508656,"nameWithOwner":"microsoft/ai-agents-for-beginners","stargazerCount":17652},{"databaseId":887808295,"nameWithOwner":"richards199999/Thinking-Claude","stargazerCount":15015},{"databaseId":881925790,"nameWithOwner":"community-scripts/ProxmoxVE","stargazerCount":14535}]},"rateLimit":{"cost":1,"remaining":4153}}}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO,
+        X-GitHub-Request-Id, Deprecation, Sunset
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 29 Apr 2025 08:12:40 GMT
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - github.com
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding, Accept, X-Requested-With
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Media-Type:
+      - github.v4; format=json
+      X-GitHub-Request-Id:
+      - CB92:160700:2C16BAB:2D9298E:681089F7
+      X-RateLimit-Limit:
+      - '5000'
+      X-RateLimit-Remaining:
+      - '4153'
+      X-RateLimit-Reset:
+      - '1745916287'
+      X-RateLimit-Resource:
+      - graphql
+      X-RateLimit-Used:
+      - '847'
+      X-XSS-Protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - Bearer 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
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://api.github.com/graphql
+  response:
+    body:
+      string: '{"data":{"search":{"pageInfo":{"endCursor":"Y3Vyc29yOjQ=","hasNextPage":false},"nodes":[{"databaseId":874559208,"nameWithOwner":"deepseek-ai/Janus","stargazerCount":17178},{"databaseId":866513204,"nameWithOwner":"HKUDS/LightRAG","stargazerCount":15823},{"databaseId":869741127,"nameWithOwner":"Flowseal/zapret-discord-youtube","stargazerCount":12451},{"databaseId":869549554,"nameWithOwner":"SWivid/F5-TTS","stargazerCount":11564}]},"rateLimit":{"cost":1,"remaining":4152}}}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO,
+        X-GitHub-Request-Id, Deprecation, Sunset
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 29 Apr 2025 08:12:41 GMT
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - github.com
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding, Accept, X-Requested-With
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Media-Type:
+      - github.v4; format=json
+      X-GitHub-Request-Id:
+      - CB94:1296F5:2BF43CF:2D712EE:681089F8
+      X-RateLimit-Limit:
+      - '5000'
+      X-RateLimit-Remaining:
+      - '4152'
+      X-RateLimit-Reset:
+      - '1745916287'
+      X-RateLimit-Resource:
+      - graphql
+      X-RateLimit-Used:
+      - '848'
+      X-XSS-Protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - Bearer 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
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://api.github.com/graphql
+  response:
+    body:
+      string: '{"data":{"search":{"pageInfo":{"endCursor":"Y3Vyc29yOjEy","hasNextPage":false},"nodes":[{"databaseId":858262444,"nameWithOwner":"PatrickJS/awesome-cursorrules","stargazerCount":23878},{"databaseId":853189791,"nameWithOwner":"Byaidu/PDFMathTranslate","stargazerCount":22190},{"databaseId":860252770,"nameWithOwner":"microsoft/OmniParser","stargazerCount":21853},{"databaseId":854347601,"nameWithOwner":"XiaoMi/ha_xiaomi_home","stargazerCount":19458},{"databaseId":860100131,"nameWithOwner":"microsoft/typescript-go","stargazerCount":19405},{"databaseId":851321035,"nameWithOwner":"aidenybai/react-scan","stargazerCount":17950},{"databaseId":862449441,"nameWithOwner":"stackblitz/bolt.new","stargazerCount":14462},{"databaseId":858798469,"nameWithOwner":"allenai/olmocr","stargazerCount":12127},{"databaseId":855528273,"nameWithOwner":"voideditor/void","stargazerCount":12112},{"databaseId":854894542,"nameWithOwner":"nextjs/saas-starter","stargazerCount":12085},{"databaseId":854807707,"nameWithOwner":"NirDiamant/GenAI_Agents","stargazerCount":11813},{"databaseId":862584018,"nameWithOwner":"modelcontextprotocol/python-sdk","stargazerCount":10943}]},"rateLimit":{"cost":1,"remaining":4151}}}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO,
+        X-GitHub-Request-Id, Deprecation, Sunset
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 29 Apr 2025 08:12:41 GMT
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - github.com
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding, Accept, X-Requested-With
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Media-Type:
+      - github.v4; format=json
+      X-GitHub-Request-Id:
+      - CB92:160700:2C16E9C:2D92C9D:681089F8
+      X-RateLimit-Limit:
+      - '5000'
+      X-RateLimit-Remaining:
+      - '4151'
+      X-RateLimit-Reset:
+      - '1745916287'
+      X-RateLimit-Resource:
+      - graphql
+      X-RateLimit-Used:
+      - '849'
+      X-XSS-Protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - Bearer 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
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://api.github.com/graphql
+  response:
+    body:
+      string: '{"data":{"search":{"pageInfo":{"endCursor":"Y3Vyc29yOjE0","hasNextPage":false},"nodes":[{"databaseId":837911756,"nameWithOwner":"feder-cr/Jobs_Applier_AI_Agent_AIHawk","stargazerCount":28042},{"databaseId":836642963,"nameWithOwner":"black-forest-labs/flux","stargazerCount":21510},{"databaseId":838253246,"nameWithOwner":"microsoft/BitNet","stargazerCount":17758},{"databaseId":838212912,"nameWithOwner":"chartdb/chartdb","stargazerCount":16167},{"databaseId":847717439,"nameWithOwner":"raga-ai-hub/RagaAI-Catalyst","stargazerCount":16161},{"databaseId":842586148,"nameWithOwner":"yetone/avante.nvim","stargazerCount":13090},{"databaseId":839037098,"nameWithOwner":"mastra-ai/mastra","stargazerCount":12547},{"databaseId":840286946,"nameWithOwner":"Huanshere/VideoLingo","stargazerCount":12463},{"databaseId":850267588,"nameWithOwner":"78/xiaozhi-esp32","stargazerCount":12162},{"databaseId":846698999,"nameWithOwner":"block/goose","stargazerCount":12141},{"databaseId":836976013,"nameWithOwner":"mihomo-party-org/mihomo-party","stargazerCount":11778},{"databaseId":838695230,"nameWithOwner":"DavidHDev/react-bits","stargazerCount":11122},{"databaseId":841376583,"nameWithOwner":"SakanaAI/AI-Scientist","stargazerCount":10869},{"databaseId":849239437,"nameWithOwner":"QwenLM/Qwen2.5-VL","stargazerCount":10117}]},"rateLimit":{"cost":1,"remaining":4150}}}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO,
+        X-GitHub-Request-Id, Deprecation, Sunset
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 29 Apr 2025 08:12:42 GMT
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - github.com
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding, Accept, X-Requested-With
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Media-Type:
+      - github.v4; format=json
+      X-GitHub-Request-Id:
+      - CB94:1296F5:2BF4662:2D715A0:681089F9
+      X-RateLimit-Limit:
+      - '5000'
+      X-RateLimit-Remaining:
+      - '4150'
+      X-RateLimit-Reset:
+      - '1745916287'
+      X-RateLimit-Resource:
+      - graphql
+      X-RateLimit-Used:
+      - '850'
+      X-XSS-Protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - Bearer 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
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://api.github.com/graphql
+  response:
+    body:
+      string: '{"data":{"search":{"pageInfo":{"endCursor":"Y3Vyc29yOjEz","hasNextPage":false},"nodes":[{"databaseId":824874689,"nameWithOwner":"cline/cline","stargazerCount":42125},{"databaseId":826168160,"nameWithOwner":"docling-project/docling","stargazerCount":28506},{"databaseId":834369920,"nameWithOwner":"jingyaogong/minimind","stargazerCount":20138},{"databaseId":828268839,"nameWithOwner":"NirDiamant/RAG_Techniques","stargazerCount":15704},{"databaseId":826170402,"nameWithOwner":"elizaOS/eliza","stargazerCount":15667},{"databaseId":828119367,"nameWithOwner":"yamadashy/repomix","stargazerCount":15238},{"databaseId":835452752,"nameWithOwner":"facebookresearch/sam2","stargazerCount":15212},{"databaseId":823745702,"nameWithOwner":"KwaiVGI/LivePortrait","stargazerCount":14724},{"databaseId":833984877,"nameWithOwner":"kvcache-ai/ktransformers","stargazerCount":13738},{"databaseId":831578771,"nameWithOwner":"nicbarker/clay","stargazerCount":13685},{"databaseId":823430322,"nameWithOwner":"FunAudioLLM/CosyVoice","stargazerCount":13449},{"databaseId":825470378,"nameWithOwner":"henrygd/beszel","stargazerCount":11097},{"databaseId":831872524,"nameWithOwner":"getomni-ai/zerox","stargazerCount":11067}]},"rateLimit":{"cost":1,"remaining":4149}}}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO,
+        X-GitHub-Request-Id, Deprecation, Sunset
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 29 Apr 2025 08:12:42 GMT
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - github.com
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding, Accept, X-Requested-With
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Media-Type:
+      - github.v4; format=json
+      X-GitHub-Request-Id:
+      - CB92:160700:2C17294:2D930C2:681089F9
+      X-RateLimit-Limit:
+      - '5000'
+      X-RateLimit-Remaining:
+      - '4149'
+      X-RateLimit-Reset:
+      - '1745916287'
+      X-RateLimit-Resource:
+      - graphql
+      X-RateLimit-Used:
+      - '851'
+      X-XSS-Protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - Bearer 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
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://api.github.com/graphql
+  response:
+    body:
+      string: '{"data":{"search":{"pageInfo":{"endCursor":"Y3Vyc29yOjEwMA==","hasNextPage":true},"nodes":[{"databaseId":231283452,"nameWithOwner":"excalidraw/excalidraw","stargazerCount":98599},{"databaseId":100060912,"nameWithOwner":"microsoft/terminal","stargazerCount":97928},{"databaseId":24195339,"nameWithOwner":"angular/angular","stargazerCount":97606},{"databaseId":15634981,"nameWithOwner":"godotengine/godot","stargazerCount":96683},{"databaseId":908531752,"nameWithOwner":"deepseek-ai/DeepSeek-V3","stargazerCount":96211},{"databaseId":23083156,"nameWithOwner":"mui/material-ui","stargazerCount":95466},{"databaseId":32484381,"nameWithOwner":"ripienaar/free-for-dev","stargazerCount":95053},{"databaseId":626805178,"nameWithOwner":"langgenius/dify","stargazerCount":95008},{"databaseId":34526884,"nameWithOwner":"ant-design/ant-design","stargazerCount":94432},{"databaseId":48378947,"nameWithOwner":"fatedier/frp","stargazerCount":93250},{"databaseId":74791366,"nameWithOwner":"ryanmcdermott/clean-code-javascript","stargazerCount":92848},{"databaseId":157616880,"nameWithOwner":"iptv-org/iptv","stargazerCount":92825},{"databaseId":15204860,"nameWithOwner":"papers-we-love/papers-we-love","stargazerCount":92636},{"databaseId":196701619,"nameWithOwner":"tauri-apps/tauri","stargazerCount":91953},{"databaseId":701547123,"nameWithOwner":"open-webui/open-webui","stargazerCount":91862},{"databaseId":55076063,"nameWithOwner":"Hack-with-Github/Awesome-Hacking","stargazerCount":91785},{"databaseId":33614304,"nameWithOwner":"nvbn/thefuck","stargazerCount":91680},{"databaseId":22790488,"nameWithOwner":"iluwatar/java-design-patterns","stargazerCount":91422},{"databaseId":90796663,"nameWithOwner":"puppeteer/puppeteer","stargazerCount":90508},{"databaseId":65600975,"nameWithOwner":"pytorch/pytorch","stargazerCount":89501},{"databaseId":88464704,"nameWithOwner":"PanJiaChen/vue-element-admin","stargazerCount":89224},{"databaseId":16408992,"nameWithOwner":"neovim/neovim","stargazerCount":89043},{"databaseId":919443098,"nameWithOwner":"deepseek-ai/DeepSeek-R1","stargazerCount":88915},{"databaseId":311525798,"nameWithOwner":"microsoft/Web-Dev-For-Beginners","stargazerCount":87567},{"databaseId":299354207,"nameWithOwner":"rustdesk/rustdesk","stargazerCount":87507},{"databaseId":106017343,"nameWithOwner":"tailwindlabs/tailwindcss","stargazerCount":87474},{"databaseId":193215554,"nameWithOwner":"n8n-io/n8n","stargazerCount":87060},{"databaseId":101296881,"nameWithOwner":"mtdvio/every-programmer-should-know","stargazerCount":86975},{"databaseId":54173593,"nameWithOwner":"storybookjs/storybook","stargazerCount":86488},{"databaseId":585146387,"nameWithOwner":"shadcn-ui/ui","stargazerCount":86104},{"databaseId":612230,"nameWithOwner":"nvm-sh/nvm","stargazerCount":84237},{"databaseId":160919119,"nameWithOwner":"fastapi/fastapi","stargazerCount":83867},{"databaseId":4164482,"nameWithOwner":"django/django","stargazerCount":83353},{"databaseId":612344730,"nameWithOwner":"ChatGPTNextWeb/NextChat","stargazerCount":83088},{"databaseId":1181927,"nameWithOwner":"bitcoin/bitcoin","stargazerCount":83081},{"databaseId":172562475,"nameWithOwner":"florinpop17/app-ideas","stargazerCount":83053},{"databaseId":74293321,"nameWithOwner":"sveltejs/svelte","stargazerCount":82412},{"databaseId":63539055,"nameWithOwner":"jaywcjlove/awesome-mac","stargazerCount":82391},{"databaseId":20904437,"nameWithOwner":"gin-gonic/gin","stargazerCount":81987},{"databaseId":5108051,"nameWithOwner":"opencv/opencv","stargazerCount":81927},{"databaseId":214587193,"nameWithOwner":"supabase/supabase","stargazerCount":81721},{"databaseId":2561582,"nameWithOwner":"animate-css/animate.css","stargazerCount":81633},{"databaseId":243950408,"nameWithOwner":"Anduin2017/HowToCook","stargazerCount":81550},{"databaseId":52631841,"nameWithOwner":"gothinkster/realworld","stargazerCount":81502},{"databaseId":655806940,"nameWithOwner":"microsoft/generative-ai-for-beginners","stargazerCount":80953},{"databaseId":537603333,"nameWithOwner":"openai/whisper","stargazerCount":80845},{"databaseId":1863329,"nameWithOwner":"laravel/laravel","stargazerCount":80731},{"databaseId":11180687,"nameWithOwner":"gohugoio/hugo","stargazerCount":80170},{"databaseId":127988011,"nameWithOwner":"macrozheng/mall","stargazerCount":80091},{"databaseId":612354784,"nameWithOwner":"ggml-org/llama.cpp","stargazerCount":78953},{"databaseId":199570071,"nameWithOwner":"2dust/v2rayN","stargazerCount":78936},{"databaseId":26500787,"nameWithOwner":"tonsky/FiraCode","stargazerCount":78838},{"databaseId":26066727,"nameWithOwner":"mermaid-js/mermaid","stargazerCount":78694},{"databaseId":12888993,"nameWithOwner":"home-assistant/core","stargazerCount":78337},{"databaseId":357728969,"nameWithOwner":"oven-sh/bun","stargazerCount":77735},{"databaseId":151834062,"nameWithOwner":"doocs/advanced-java","stargazerCount":77527},{"databaseId":51117837,"nameWithOwner":"tensorflow/models","stargazerCount":77503},{"databaseId":32689863,"nameWithOwner":"3b1b/manim","stargazerCount":77083},{"databaseId":6296790,"nameWithOwner":"spring-projects/spring-boot","stargazerCount":76950},{"databaseId":160640094,"nameWithOwner":"MisterBooo/LeetCodeAnimation","stargazerCount":75877},{"databaseId":589831718,"nameWithOwner":"comfyanonymous/ComfyUI","stargazerCount":75555},{"databaseId":212639071,"nameWithOwner":"bregman-arie/devops-exercises","stargazerCount":75401},{"databaseId":3470471,"nameWithOwner":"FortAwesome/Font-Awesome","stargazerCount":75144},{"databaseId":47018239,"nameWithOwner":"DopplerHQ/awesome-interview-questions","stargazerCount":74585},{"databaseId":10744183,"nameWithOwner":"netdata/netdata","stargazerCount":74416},{"databaseId":14747598,"nameWithOwner":"typicode/json-server","stargazerCount":74120},{"databaseId":44882201,"nameWithOwner":"MunGell/awesome-for-beginners","stargazerCount":73538},{"databaseId":619959033,"nameWithOwner":"nomic-ai/gpt4all","stargazerCount":73212},{"databaseId":278335273,"nameWithOwner":"anuraghazra/github-readme-stats","stargazerCount":72848},{"databaseId":44571718,"nameWithOwner":"vuejs/awesome-vue","stargazerCount":72831},{"databaseId":145553672,"nameWithOwner":"fighting41love/funNLP","stargazerCount":72733},{"databaseId":507775,"nameWithOwner":"elastic/elasticsearch","stargazerCount":72511},{"databaseId":257485422,"nameWithOwner":"vitejs/vite","stargazerCount":72397},{"databaseId":221981891,"nameWithOwner":"microsoft/playwright","stargazerCount":72195},{"databaseId":343965132,"nameWithOwner":"microsoft/ML-For-Beginners","stargazerCount":72045},{"databaseId":693342566,"nameWithOwner":"ByteByteGoHq/system-design-101","stargazerCount":71919},{"databaseId":203587744,"nameWithOwner":"hoppscotch/hoppscotch","stargazerCount":71448},{"databaseId":172953845,"nameWithOwner":"coder/code-server","stargazerCount":71428},{"databaseId":80945428,"nameWithOwner":"nestjs/nest","stargazerCount":70634},{"databaseId":523379232,"nameWithOwner":"CompVis/stable-diffusion","stargazerCount":70476},{"databaseId":107111421,"nameWithOwner":"thedaviddias/Front-End-Checklist","stargazerCount":69981},{"databaseId":718741813,"nameWithOwner":"abi/screenshot-to-code","stargazerCount":69764},{"databaseId":13807606,"nameWithOwner":"junegunn/fzf","stargazerCount":69763},{"databaseId":14712850,"nameWithOwner":"syncthing/syncthing","stargazerCount":69734},{"databaseId":7691631,"nameWithOwner":"moby/moby","stargazerCount":69642},{"databaseId":596892,"nameWithOwner":"pallets/flask","stargazerCount":69427},{"databaseId":156018,"nameWithOwner":"redis/redis","stargazerCount":68870},{"databaseId":101138315,"nameWithOwner":"d2l-ai/d2l-zh","stargazerCount":68862},{"databaseId":1861458,"nameWithOwner":"hakimel/reveal.js","stargazerCount":68791},{"databaseId":71583602,"nameWithOwner":"Developer-Y/cs-video-courses","stargazerCount":68600},{"databaseId":44838949,"nameWithOwner":"swiftlang/swift","stargazerCount":68507},{"databaseId":596115135,"nameWithOwner":"base/node","stargazerCount":68499},{"databaseId":616372661,"nameWithOwner":"binary-husky/gpt_academic","stargazerCount":68312},{"databaseId":382496361,"nameWithOwner":"louislam/uptime-kuma","stargazerCount":67863},{"databaseId":21872392,"nameWithOwner":"josephmisiti/awesome-machine-learning","stargazerCount":67811},{"databaseId":22670857,"nameWithOwner":"enaqx/awesome-react","stargazerCount":67784},{"databaseId":15111821,"nameWithOwner":"grafana/grafana","stargazerCount":67723},{"databaseId":23357588,"nameWithOwner":"protocolbuffers/protobuf","stargazerCount":67412},{"databaseId":237159,"nameWithOwner":"expressjs/express","stargazerCount":66862},{"databaseId":83999700,"nameWithOwner":"sdmg15/Best-websites-a-programmer-should-visit","stargazerCount":66667}]},"rateLimit":{"cost":1,"remaining":4158}}}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO,
+        X-GitHub-Request-Id, Deprecation, Sunset
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 29 Apr 2025 08:12:43 GMT
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - github.com
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding, Accept, X-Requested-With
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Media-Type:
+      - github.v4; format=json
+      X-GitHub-Request-Id:
+      - CB93:1057E7:2B5E0A8:2CDB927:681089F4
+      X-RateLimit-Limit:
+      - '5000'
+      X-RateLimit-Remaining:
+      - '4158'
+      X-RateLimit-Reset:
+      - '1745916287'
+      X-RateLimit-Resource:
+      - graphql
+      X-RateLimit-Used:
+      - '842'
+      X-XSS-Protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - Bearer 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
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://api.github.com/graphql
+  response:
+    body:
+      string: '{"data":{"search":{"pageInfo":{"endCursor":"Y3Vyc29yOjc=","hasNextPage":false},"nodes":[{"databaseId":819554665,"nameWithOwner":"exo-explore/exo","stargazerCount":27892},{"databaseId":817326197,"nameWithOwner":"mediar-ai/screenpipe","stargazerCount":13866},{"databaseId":822285449,"nameWithOwner":"andrewyng/aisuite","stargazerCount":11966},{"databaseId":809475352,"nameWithOwner":"dockur/macos","stargazerCount":11598},{"databaseId":812077621,"nameWithOwner":"microsoft/data-formulator","stargazerCount":11444},{"databaseId":819514136,"nameWithOwner":"Doriandarko/claude-engineer","stargazerCount":10984},{"databaseId":822044840,"nameWithOwner":"ZJU-LLMs/Foundations-of-LLMs","stargazerCount":10010}]},"rateLimit":{"cost":1,"remaining":4148}}}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO,
+        X-GitHub-Request-Id, Deprecation, Sunset
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 29 Apr 2025 08:12:43 GMT
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - github.com
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding, Accept, X-Requested-With
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Media-Type:
+      - github.v4; format=json
+      X-GitHub-Request-Id:
+      - CB94:1296F5:2BF4A76:2D719EC:681089FA
+      X-RateLimit-Limit:
+      - '5000'
+      X-RateLimit-Remaining:
+      - '4148'
+      X-RateLimit-Reset:
+      - '1745916287'
+      X-RateLimit-Resource:
+      - graphql
+      X-RateLimit-Used:
+      - '852'
+      X-XSS-Protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - Bearer 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
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://api.github.com/graphql
+  response:
+    body:
+      string: '{"data":{"search":{"pageInfo":{"endCursor":"Y3Vyc29yOjEy","hasNextPage":false},"nodes":[{"databaseId":808144141,"nameWithOwner":"DigitalPlatDev/FreeDomain","stargazerCount":45830},{"databaseId":798201435,"nameWithOwner":"unclecode/crawl4ai","stargazerCount":41390},{"databaseId":808045485,"nameWithOwner":"LadybirdBrowser/ladybird","stargazerCount":37651},{"databaseId":797345627,"nameWithOwner":"inkonchain/docs","stargazerCount":36752},{"databaseId":800217484,"nameWithOwner":"inkonchain/node","stargazerCount":36712},{"databaseId":806709826,"nameWithOwner":"2noise/ChatTTS","stargazerCount":35986},{"databaseId":806315903,"nameWithOwner":"karpathy/LLM101n","stargazerCount":33297},{"databaseId":805155266,"nameWithOwner":"CherryHQ/cherry-studio","stargazerCount":25084},{"databaseId":802916901,"nameWithOwner":"naklecha/llama3-from-scratch","stargazerCount":14901},{"databaseId":803014189,"nameWithOwner":"better-auth/better-auth","stargazerCount":12439},{"databaseId":808207942,"nameWithOwner":"anthropics/courses","stargazerCount":11253},{"databaseId":804788522,"nameWithOwner":"THU-MIG/yolov10","stargazerCount":10666}]},"rateLimit":{"cost":1,"remaining":4147}}}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO,
+        X-GitHub-Request-Id, Deprecation, Sunset
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 29 Apr 2025 08:12:43 GMT
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - github.com
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding, Accept, X-Requested-With
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Media-Type:
+      - github.v4; format=json
+      X-GitHub-Request-Id:
+      - CB92:160700:2C175FC:2D93457:681089FA
+      X-RateLimit-Limit:
+      - '5000'
+      X-RateLimit-Remaining:
+      - '4147'
+      X-RateLimit-Reset:
+      - '1745916287'
+      X-RateLimit-Resource:
+      - graphql
+      X-RateLimit-Used:
+      - '853'
       X-XSS-Protection:
       - '0'
     status:
