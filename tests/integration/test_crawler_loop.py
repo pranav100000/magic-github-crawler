@@ -1,5 +1,7 @@
 from dotenv import load_dotenv
-import os, asyncio, pytest, vcr
+import os
+import pytest
+import vcr
 from ghcrawler.core.crawler import AsyncCrawler
 
 load_dotenv()

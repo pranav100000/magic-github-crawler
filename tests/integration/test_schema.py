@@ -1,5 +1,5 @@
 import sqlalchemy as sa
-from ghcrawler.db import engine, Base
+from ghcrawler.db import engine
 
 
 def test_tables_exist():

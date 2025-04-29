@@ -1,4 +1,5 @@
-import typer, asyncio
+import typer
+import asyncio
 from ghcrawler.core.crawler import AsyncCrawler
 
 app = typer.Typer()

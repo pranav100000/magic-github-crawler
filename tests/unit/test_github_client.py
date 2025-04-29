@@ -1,5 +1,7 @@
 from dotenv import load_dotenv
-import os, pytest, asyncio, vcr
+import os
+import pytest
+import vcr
 from ghcrawler.api import GithubClient
 
 load_dotenv()

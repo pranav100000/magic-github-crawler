@@ -8,7 +8,6 @@ from datetime import date
 from contextlib import contextmanager
 
 from sqlalchemy.dialects.postgresql import insert
-from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
 from .engine import SessionLocal
