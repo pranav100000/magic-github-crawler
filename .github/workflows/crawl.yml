@@ -1,33 +1,54 @@
-github-crawler/
-├── .github/workflows/
-│   ├── ci.yml
-│   └── crawl.yml
-├── alembic/
-│   └── versions/…
-├── docs/
-│   ├── architecture.md
-│   ├── ERD.png
-│   └── scaling.md
-├── src/ghcrawler/
-│   ├── __init__.py        # __version__ here
-│   ├── config.py
-│   ├── core/
-│   │   └── crawler.py
-│   ├── api/
-│   │   ├── github_client.py
-│   │   └── rate_limiting.py
-│   ├── db/
-│   │   ├── models.py
-│   │   └── dal.py
-│   ├── cli.py
-│   ├── exceptions.py
-│   ├── logging.py
-│   └── metrics.py
-├── tests/…
-├── scripts/…
-├── Makefile
-├── .env.example
-├── .gitignore
-├── pyproject.toml
-├── alembic.ini
-└── README.md
+name: crawl-stars
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: crawler
+          POSTGRES_PASSWORD: crawler
+          POSTGRES_DB: ghstars
+        ports: [5432:5432]
+        options: >-
+          --health-cmd "pg_isready -U crawler -d ghstars" --health-interval 5s --health-retries 5 --health-timeout 5s
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astro-build/uv@v1  # Action that installs uv + restores cache
+
+      - name: Install deps
+        run: |
+          uv venv .venv
+          uv pip install -e .[dev]
+
+      - name: Run migrations
+        env:
+          DATABASE_URL: postgresql://crawler:crawler@localhost:5432/ghstars
+        run: |
+          . .venv/bin/activate
+          alembic upgrade head
+
+      - name: Crawl stars (10 k sample)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          . .venv/bin/activate
+          python -m ghcrawler.cli crawl-stars --limit 10000 --batch 100
+
+      - name: Export CSV
+        run: |
+          . .venv/bin/activate
+          psql postgresql://crawler:crawler@localhost:5432/ghstars -c "\copy repo_star_snapshots to stars.csv csv"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: stars-snapshot
+          path: stars.csv

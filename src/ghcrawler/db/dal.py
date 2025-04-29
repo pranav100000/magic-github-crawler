@@ -31,7 +31,7 @@ def upsert_repository(*, repo_id: int, name_owner: str, language: str | None = N
     stmt = (
         insert(Repository)
         .values(id=repo_id, name_owner=name_owner, language=language)
-        .on_conflict_do_update(index_elements=[Repository.id], set_={"language": language})
+        .on_conflict_do_update(index_elements=["id"], set_={"language": language})
     )
     with session_scope() as s:
         s.execute(stmt)

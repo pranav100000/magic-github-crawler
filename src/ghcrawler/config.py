@@ -2,7 +2,7 @@ from functools import lru_cache
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
-    """App‑wide configuration pulled from environment variables or .env."""
+    """App-wide configuration pulled from environment variables or .env."""
     # Database
     db_user: str = "crawler"
     db_password: str = "crawler"
