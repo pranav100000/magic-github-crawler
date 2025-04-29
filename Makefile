@@ -38,5 +38,11 @@ migrate:
 test:
 	$(ACTIVATE) && pytest -q
 
+test-unit:
+	$(ACTIVATE) && pytest tests/unit -q
+
+test-integration:
+	$(ACTIVATE) && pytest tests/integration -q
+
 clean:
 	rm -rf $(VENV) pgdata __pycache__ .pytest_cache alembic alembic.ini
