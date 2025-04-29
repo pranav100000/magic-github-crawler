@@ -4,8 +4,8 @@ from ghcrawler.core.crawler import AsyncCrawler
 
 load_dotenv()
 
-TOKEN = os.getenv("GH_TOKEN")
-pytestmark = pytest.mark.skipif(not TOKEN, reason="GH_TOKEN not set")
+TOKEN = os.getenv("GITHUB_TOKEN")
+pytestmark = pytest.mark.skipif(not TOKEN, reason="GITHUB_TOKEN not set")
 
 my_vcr = vcr.VCR(path_transformer=vcr.VCR.ensure_suffix(".yaml"))
 

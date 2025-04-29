@@ -38,7 +38,7 @@ jobs:
 
       - name: Crawl stars (10 k sample)
         env:
-          GH_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
           . .venv/bin/activate
           python -m ghcrawler.cli crawl-stars --limit 10000 --batch 100
