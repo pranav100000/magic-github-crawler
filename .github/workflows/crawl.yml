@@ -22,7 +22,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: astro-build/uv@v1  # Action that installs uv + restores cache
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
 
       - name: Install deps
         run: |
@@ -32,11 +33,12 @@ jobs:
       - name: Run migrations
         env:
           DATABASE_URL: postgresql://crawler:crawler@localhost:5432/ghstars
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
           . .venv/bin/activate
           alembic upgrade head
 
-      - name: Crawl stars (10 k sample)
+      - name: Crawl stars (10k sample)
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
