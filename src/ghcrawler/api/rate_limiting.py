@@ -1,6 +1,8 @@
 from asyncio import Lock, sleep
 from time import monotonic
 
+# Small delay added after each acquisition to ease CPU pressure / request frequency
+INTER_REQUEST_DELAY_SECONDS = 0.15
 
 class RateLimiter:
     """Token‑bucket limiter tuned for GitHub GraphQL cost points"""

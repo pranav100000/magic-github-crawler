@@ -34,13 +34,28 @@ class GithubPage(BaseModel):
 _SETTINGS = get_settings()
 _ENDPOINT = _SETTINGS.github_graphql_endpoint or "https://api.github.com/graphql"
 
-# global limiter tuned for a single GitHub token
+# Small delay added *before* each request to ease CPU pressure / request frequency
+INTER_REQUEST_DELAY_SECONDS = 0.15
+# Estimated cost acquired *before* the request
+PRE_ACQUIRE_COST = 1
+
+# --- Rate Limiter Configuration ---
+# Primary limit: Typically 5000 points/hour
+# Secondary limit (points): 2000 points/minute
+# Secondary limit (CPU): ~60s CPU / 60s real time for GraphQL
+
+# We tune the limiter based on the stricter secondary point limit.
+SECONDARY_POINTS_PER_MINUTE = 2000
+# Reduce capacity slightly to prevent large initial bursts, respecting secondary limits
+LIMITER_CAPACITY = min(_SETTINGS.bucket_capacity, 1000)
+
+# global limiter tuned for GitHub secondary rate limits
 _limiter = RateLimiter(
-    capacity=_SETTINGS.bucket_capacity, refill_per_min=_SETTINGS.bucket_refill_per_min
+    capacity=LIMITER_CAPACITY, # Use a potentially reduced capacity
+    refill_per_min=SECONDARY_POINTS_PER_MINUTE # Refill based on secondary points/min limit
 )
 
 
-# --- Custom Exception for Abuse Rate Limit ---
 class GithubAbuseRateLimitError(Exception):
     """Custom exception for GitHub abuse rate limit error."""
 
@@ -121,11 +136,14 @@ class GithubClient:
         logger.debug(
             f"Executing GraphQL query for segment: {search_query}, after: {after}"
         )
+
+        # --- Acquire estimated cost and apply delay BEFORE the request ---
+        await _limiter.acquire(PRE_ACQUIRE_COST) 
+        await asyncio.sleep(INTER_REQUEST_DELAY_SECONDS)
+
         async with self._session.post(_ENDPOINT, json=query) as resp:  # type: ignore[index]
             # --- Abuse Rate Limit Check ---
             if resp.status == 403:
-                # Check if it's specifically an abuse rate limit
-                # GitHub might send a JSON body or just text
                 try:
                     data = await resp.json()
                     body_text = str(data).lower()
@@ -149,17 +167,11 @@ class GithubClient:
                         logger.warning(
                             "GitHub abuse rate limit detected, but no Retry-After header found. Using default backoff."
                         )
-                    # If we fall through here (no Retry-After or parse error), let raise_for_status handle it
 
             # Check for other errors (like 404, 5xx, etc.)
-            resp.raise_for_status()  # Raises ClientResponseError for 4xx/5xx
+            resp.raise_for_status() 
 
-            # --- Existing Logic ---
-            data: dict[str, Any] = await resp.json()  # Now we are sure it's JSON
-
-            # handle errors (omitted for brevity) - Note: GraphQL errors might be in data['errors'] even with 200 OK
-            # TODO: Add explicit handling for GraphQL errors if needed
-
+            data: dict[str, Any] = await resp.json()
             info = data["data"]["search"]["pageInfo"]
             repos = [
                 RepoNode(
@@ -171,8 +183,6 @@ class GithubClient:
             ]
             cost = data["data"]["rateLimit"]["cost"]
             remaining = data["data"]["rateLimit"]["remaining"]
-
-            await _limiter.acquire(cost)
 
             return GithubPage(
                 repos=repos,

@@ -38,7 +38,7 @@ jobs:
           . .venv/bin/activate
           alembic upgrade head
 
-      - name: Crawl stars (10k sample)
+      - name: Crawl 100k repos
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |

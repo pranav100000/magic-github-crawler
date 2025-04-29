@@ -11,7 +11,7 @@ $ make bootstrap
 # 2 · run unit + integration tests
 $ make test
 
-# 3 · crawl 100000 repos (requires $GITHUB_TOKEN)
+# 3 · crawl 100000 repos (requires $GITHUB_TOKEN, either export or put in .env)
 $ . .venv/bin/activate && \
   uv run crawl-stars --limit 100000
 
@@ -36,17 +36,16 @@ pr_reviews(id PK, pr_id FK,…);
 
 ---
 ## Performance
-* **Batch**: 100 (repos/request – GraphQL max).
-* **Concurrency**: 8 async requests.
-* **Token‑bucket**: capacity = 995, refill = 5 000 pts / h.
-* **Throughput**: ≈45 k repos / h (single PAT) → 100 k in < 2.5 h.
+* **Batch**: 100 (repos/request – GitHub GraphQL max). Batch queries by date because GitHub will not let you paginate over 1000 repos at once, so searches should always have less than 1000 items.
+* **Token‑bucket**: capacity = 995, refill = 5 000 pts / h. Token bucket is tuned for maximal throughput possible with GitHub API.
+* **Throughput**: 5000 API requests per hour, so 
 * **Retries**: exponential back‑off on network/5xx; respects `Retry‑After`.
 
 ---
 ## CI pipeline (`.github/workflows/crawl.yml`)
-1. Checkout → install **uv** + deps.
+1. Checkout → install uv + deps.
 2. Postgres service + `alembic upgrade head`.
-3. `crawl-stars --limit 10000` (sample for runtime budget).
+3. `crawl-stars --limit 100000`.
 4. Export `stars.csv` → upload artifact.
 
 
@@ -74,4 +73,3 @@ on:
   schedule:
     - cron: '15 3 * * *'  # every day 03:15 UTC
 ```
-Database accumulates daily snapshots automatically.
