@@ -1,7 +1,7 @@
 import asyncio
 from datetime import date
 import logging  # Import logging
-import calendar # Import calendar module
+import calendar  # Import calendar module
 from ghcrawler.api import GithubClient
 from ghcrawler.db import dal
 from ghcrawler.config import get_settings
@@ -39,13 +39,18 @@ DEFAULT_CONCURRENCY = 3
 
 
 class AsyncCrawler:
-    def __init__(self, target: int = 100_000, batch: int = 100, concurrency: int = DEFAULT_CONCURRENCY):
+    def __init__(
+        self,
+        target: int = 100_000,
+        batch: int = 100,
+        concurrency: int = DEFAULT_CONCURRENCY,
+    ):
         self.target = target
         self.batch = batch
         self.fetched = 0
         self.today = date.today()
         self.semaphore = asyncio.Semaphore(concurrency)
-        self.stop_event = asyncio.Event() # Event to signal stopping
+        self.stop_event = asyncio.Event()  # Event to signal stopping
 
     async def _process_segment(self, gh: GithubClient, query: str) -> bool:
         """
@@ -61,13 +66,13 @@ class AsyncCrawler:
             # Check if stop signal received or target already met before making API call
             if self.stop_event.is_set():
                 logger.info(f"Stop signal received for query: {query}. Halting.")
-                break # Stop processing this segment
+                break  # Stop processing this segment
             if self.fetched >= self.target:
                 logger.info(
                     f"Target reached ({self.target}) globally. Stopping segment: {query}"
                 )
                 if not self.stop_event.is_set():
-                    self.stop_event.set() # Ensure stop signal is set
+                    self.stop_event.set()  # Ensure stop signal is set
                 target_reached_in_segment = True
                 break
 
@@ -75,23 +80,29 @@ class AsyncCrawler:
                 logger.warning(
                     f"Reached MAX_RESULTS_PER_QUERY ({MAX_RESULTS_PER_QUERY}) for query '{query}'. Stopping pagination for this query."
                 )
-                break # Segment limit reached
+                break  # Segment limit reached
 
             try:
                 # Check stop signal again before potentially long API call
                 if self.stop_event.is_set():
-                     logger.info(f"Stop signal received before API call for query: {query}. Halting.")
-                     break
+                    logger.info(
+                        f"Stop signal received before API call for query: {query}. Halting."
+                    )
+                    break
 
                 current_batch = min(
                     self.batch, MAX_RESULTS_PER_QUERY - segment_fetched_count
                 )
                 # Ensure we don't exceed overall target in this batch request (approximate)
-                current_batch = min(current_batch, self.target - self.fetched + 1) # +1 to be safe
+                current_batch = min(
+                    current_batch, self.target - self.fetched + 1
+                )  # +1 to be safe
                 if current_batch <= 0:
-                    break # Avoid batch size <= 0
+                    break  # Avoid batch size <= 0
 
-                logger.debug(f"Query '{query}': Requesting batch size {current_batch}, after: {cursor}")
+                logger.debug(
+                    f"Query '{query}': Requesting batch size {current_batch}, after: {cursor}"
+                )
                 page = await gh.search_repos(
                     search_query=query, after=cursor, batch=current_batch
                 )
@@ -99,13 +110,13 @@ class AsyncCrawler:
             except Exception as e:
                 # Check if the error is due to cancellation
                 if isinstance(e, asyncio.CancelledError):
-                     logger.warning(f"Task for query '{query}' was cancelled.")
-                     raise # Re-raise cancellation
+                    logger.warning(f"Task for query '{query}' was cancelled.")
+                    raise  # Re-raise cancellation
                 logger.error(
                     f"Error fetching page for query '{query}' (after: {cursor}): {e}. Skipping rest of this query.",
                     exc_info=True,
                 )
-                break # Error occurred, stop this segment
+                break  # Error occurred, stop this segment
 
             if not page.repos:
                 logger.info(
@@ -126,12 +137,17 @@ class AsyncCrawler:
                     )
 
                 # 2 · snapshot insert (bulk)
-                snapshot_rows = [(r.id, self.today, r.stargazerCount) for r in page.repos]
+                snapshot_rows = [
+                    (r.id, self.today, r.stargazerCount) for r in page.repos
+                ]
                 dal.bulk_insert_snapshots(snapshot_rows)
             except Exception as db_err:
-                 logger.error(f"Database error during processing query '{query}': {db_err}", exc_info=True)
-                 # Decide if we should stop the segment or continue? For now, stop.
-                 break
+                logger.error(
+                    f"Database error during processing query '{query}': {db_err}",
+                    exc_info=True,
+                )
+                # Decide if we should stop the segment or continue? For now, stop.
+                break
 
             # --- Update Counts & Cursor ---
             count_in_page = len(page.repos)
@@ -148,9 +164,11 @@ class AsyncCrawler:
 
             # Check if target reached *after* processing this page
             if self.fetched >= self.target:
-                logger.info(f"Target reached ({self.target}) after processing page for query: {query}")
+                logger.info(
+                    f"Target reached ({self.target}) after processing page for query: {query}"
+                )
                 if not self.stop_event.is_set():
-                    self.stop_event.set() # Signal others to stop
+                    self.stop_event.set()  # Signal others to stop
                 target_reached_in_segment = True
                 # Don't break here, let the loop condition handle it next iteration
                 # to ensure has_next check runs.
@@ -161,25 +179,31 @@ class AsyncCrawler:
 
         return target_reached_in_segment
 
-
     async def _process_segment_wrapper(self, gh: GithubClient, query: str):
         """Acquires semaphore, runs segment processing, releases semaphore."""
         async with self.semaphore:
             # Check stop event *before* starting processing for this segment
             if self.stop_event.is_set() or self.fetched >= self.target:
-                logger.info(f"Skipping segment '{query}' as stop signal is set or target reached.")
+                logger.info(
+                    f"Skipping segment '{query}' as stop signal is set or target reached."
+                )
                 return
             try:
                 await self._process_segment(gh, query)
             except asyncio.CancelledError:
                 logger.warning(f"Segment processing task for '{query}' cancelled.")
             except Exception as e:
-                 logger.error(f"Unhandled exception in segment wrapper for '{query}': {e}", exc_info=True)
+                logger.error(
+                    f"Unhandled exception in segment wrapper for '{query}': {e}",
+                    exc_info=True,
+                )
 
     async def run(self):
-        logger.info(f"Starting crawl. Target: {self.target}, Batch: {self.batch}, Concurrency: {self.semaphore._value}")
+        logger.info(
+            f"Starting crawl. Target: {self.target}, Batch: {self.batch}, Concurrency: {self.semaphore._value}"
+        )
         self.fetched = 0
-        self.stop_event.clear() # Ensure event is clear at start
+        self.stop_event.clear()  # Ensure event is clear at start
         tasks = []
         all_queries = []
 
@@ -198,8 +222,14 @@ class AsyncCrawler:
         # Date-segmented star ranges (Monthly) - Generate in reverse chronological order (more recent first)
         for star_query in DATE_SEGMENTED_STAR_RANGES:
             for year in reversed(years_to_process):
-                months_this_year = range(1, current_month + 1) if year == current_year else range(1, 13)
-                for month in reversed(list(months_this_year)): # Process recent months first within a year
+                months_this_year = (
+                    range(1, current_month + 1)
+                    if year == current_year
+                    else range(1, 13)
+                )
+                for month in reversed(
+                    list(months_this_year)
+                ):  # Process recent months first within a year
                     month_start_day = 1
                     month_end_day = calendar.monthrange(year, month)[1]
                     start_date_str = f"{year}-{month:02d}-{month_start_day:02d}"
@@ -215,7 +245,9 @@ class AsyncCrawler:
             for query in all_queries:
                 # Check before creating task if we should stop
                 if self.stop_event.is_set() or self.fetched >= self.target:
-                    logger.info("Target reached or stop event set. Halting task creation.")
+                    logger.info(
+                        "Target reached or stop event set. Halting task creation."
+                    )
                     break
 
                 # Create and store task (wrapper handles semaphore)
@@ -223,24 +255,38 @@ class AsyncCrawler:
                 tasks.append(task)
 
             # Wait for all created tasks to complete
-            logger.info(f"Waiting for {len(tasks)} segment processing tasks to complete...")
+            logger.info(
+                f"Waiting for {len(tasks)} segment processing tasks to complete..."
+            )
             # Using return_exceptions=True to prevent gather from stopping on first error/cancellation
             results = await asyncio.gather(*tasks, return_exceptions=True)
 
             # Log any exceptions that occurred in tasks
             for i, result in enumerate(results):
-                if isinstance(result, Exception) and not isinstance(result, asyncio.CancelledError):
+                if isinstance(result, Exception) and not isinstance(
+                    result, asyncio.CancelledError
+                ):
                     # Find the original query associated with this task index if possible
                     # (Requires tasks and all_queries to align, which they should here)
-                    query_for_error = all_queries[i] if i < len(all_queries) else "unknown query"
-                    logger.error(f"Task for query '{query_for_error}' failed with exception: {result}", exc_info=result)
+                    query_for_error = (
+                        all_queries[i] if i < len(all_queries) else "unknown query"
+                    )
+                    logger.error(
+                        f"Task for query '{query_for_error}' failed with exception: {result}",
+                        exc_info=result,
+                    )
                 elif isinstance(result, asyncio.CancelledError):
-                     logger.warning(f"Task {i} was cancelled (likely due to target being reached).")
+                    logger.warning(
+                        f"Task {i} was cancelled (likely due to target being reached)."
+                    )
 
-
-        final_fetched = self.fetched # Read final count
-        logger.info(f"✔ Crawl attempt finished. Total repositories fetched: {final_fetched}/{self.target}")
+        final_fetched = self.fetched  # Read final count
+        logger.info(
+            f"✔ Crawl attempt finished. Total repositories fetched: {final_fetched}/{self.target}"
+        )
         if final_fetched >= self.target:
-             logger.info("Target successfully reached.")
+            logger.info("Target successfully reached.")
         else:
-             logger.warning(f"Target ({self.target}) not reached. Fetched {final_fetched}.")
+            logger.warning(
+                f"Target ({self.target}) not reached. Fetched {final_fetched}."
+            )

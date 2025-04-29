@@ -51,8 +51,8 @@ LIMITER_CAPACITY = min(_SETTINGS.bucket_capacity, 1000)
 
 # global limiter tuned for GitHub secondary rate limits
 _limiter = RateLimiter(
-    capacity=LIMITER_CAPACITY, # Use a potentially reduced capacity
-    refill_per_min=SECONDARY_POINTS_PER_MINUTE # Refill based on secondary points/min limit
+    capacity=LIMITER_CAPACITY,  # Use a potentially reduced capacity
+    refill_per_min=SECONDARY_POINTS_PER_MINUTE,  # Refill based on secondary points/min limit
 )
 
 
@@ -138,7 +138,7 @@ class GithubClient:
         )
 
         # --- Acquire estimated cost and apply delay BEFORE the request ---
-        await _limiter.acquire(PRE_ACQUIRE_COST) 
+        await _limiter.acquire(PRE_ACQUIRE_COST)
         await asyncio.sleep(INTER_REQUEST_DELAY_SECONDS)
 
         async with self._session.post(_ENDPOINT, json=query) as resp:  # type: ignore[index]
@@ -169,7 +169,7 @@ class GithubClient:
                         )
 
             # Check for other errors (like 404, 5xx, etc.)
-            resp.raise_for_status() 
+            resp.raise_for_status()
 
             data: dict[str, Any] = await resp.json()
             info = data["data"]["search"]["pageInfo"]
