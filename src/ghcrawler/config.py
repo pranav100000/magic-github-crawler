@@ -12,6 +12,7 @@ class Settings(BaseSettings):
 
     # GitHub
     github_token: str
+    github_graphql_endpoint: str = "https://api.github.com/graphql"
     request_concurrency: int = 10
 
     # Rate‑limit bucket

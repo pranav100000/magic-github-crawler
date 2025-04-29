@@ -16,6 +16,9 @@ dependencies = [
     "alembic~=1.13",
     "python-dotenv~=1.0",
     "psycopg2>=2.9.10",
+    "vcrpy>=6.0.2",
+    "aiohttp>=3.11.18",
+    "pytest-asyncio>=0.26.0",
 ]
 
 [project.optional-dependencies]
@@ -30,3 +33,6 @@ dev = [
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/ghcrawler"]
+
+[tool.pytest.ini_options]
+asyncio_default_fixture_loop_scope = "function"
