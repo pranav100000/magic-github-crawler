@@ -35,7 +35,7 @@ _SETTINGS = get_settings()
 _ENDPOINT = _SETTINGS.github_graphql_endpoint or "https://api.github.com/graphql"
 
 # Small delay added *before* each request to ease CPU pressure / request frequency
-INTER_REQUEST_DELAY_SECONDS = 0.15
+INTER_REQUEST_DELAY_SECONDS = 0.25
 # Estimated cost acquired *before* the request
 PRE_ACQUIRE_COST = 1
 
