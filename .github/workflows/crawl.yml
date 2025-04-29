@@ -43,7 +43,7 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
           . .venv/bin/activate
-          python -m ghcrawler.cli crawl-stars --limit 10000 --batch 100
+          python -m ghcrawler.cli --limit 10000 --batch 100
 
       - name: Export CSV
         run: |
