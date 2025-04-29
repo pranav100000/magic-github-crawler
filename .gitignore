@@ -2,3 +2,5 @@
 .venv
 /pgdata
 __pycache__
+crawler_two_pages.yaml
+github_search.yaml
