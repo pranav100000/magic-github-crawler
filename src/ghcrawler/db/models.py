@@ -2,8 +2,10 @@ from datetime import datetime, date
 from sqlalchemy import BigInteger, Date, Integer, Text, TIMESTAMP, ForeignKey, func
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 
+
 class Base(DeclarativeBase):
     pass  # shared metadata lives here
+
 
 class Repository(Base):
     __tablename__ = "repositories"
@@ -16,7 +18,10 @@ class Repository(Base):
         TIMESTAMP(timezone=True), server_default=func.now(), nullable=False
     )
 
-    stars = relationship("RepoStarSnapshot", back_populates="repo", cascade="all, delete")
+    stars = relationship(
+        "RepoStarSnapshot", back_populates="repo", cascade="all, delete"
+    )
+
 
 class RepoStarSnapshot(Base):
     __tablename__ = "repo_star_snapshots"

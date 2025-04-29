@@ -9,6 +9,7 @@ pytestmark = pytest.mark.skipif(not TOKEN, reason="GITHUB_TOKEN not set")
 
 my_vcr = vcr.VCR(path_transformer=vcr.VCR.ensure_suffix(".yaml"))
 
+
 @my_vcr.use_cassette("crawler_two_pages.yaml")
 @pytest.mark.asyncio
 async def test_crawl_two_pages():

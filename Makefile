@@ -3,7 +3,7 @@ UV ?= uv                      # ensure `uv` is on PATH (brew, scoop, or `pipx in
 VENV := .venv
 ACTIVATE := . $(VENV)/bin/activate  # POSIX‑friendly source shortcut
 
-.PHONY: bootstrap db-up db-down migrate init-alembic test clean
+.PHONY: bootstrap db-up db-down migrate init-alembic test clean lint format
 
 bootstrap: ## create uv venv, install deps, spin up DB, run migrations
 	$(UV) venv $(VENV)
@@ -43,6 +43,16 @@ test-unit:
 
 test-integration:
 	$(ACTIVATE) && pytest tests/integration -q
+
+lint: ## check code style with ruff and black
+	$(ACTIVATE) && \
+	  ruff check . && \
+	  black --check --diff .
+
+format: ## format code with ruff and black
+	$(ACTIVATE) && \
+	  ruff format . && \
+	  black .
 
 clean:
 	rm -rf $(VENV) pgdata __pycache__ .pytest_cache alembic alembic.ini

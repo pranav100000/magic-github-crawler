@@ -1,8 +1,10 @@
 from functools import lru_cache
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
+
 class Settings(BaseSettings):
     """App-wide configuration pulled from environment variables or .env."""
+
     # Database
     db_user: str = "crawler"
     db_password: str = "crawler"
@@ -24,9 +26,10 @@ class Settings(BaseSettings):
     @property
     def db_url(self) -> str:
         return (
-            f"postgresql+psycopg://{self.db_user}:{self.db_password}" \
+            f"postgresql+psycopg://{self.db_user}:{self.db_password}"
             f"@{self.db_host}:{self.db_port}/{self.db_name}"
         )
+
 
 @lru_cache()
 def get_settings() -> Settings:  # pragma: no cover

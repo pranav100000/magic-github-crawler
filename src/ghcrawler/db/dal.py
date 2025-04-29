@@ -2,6 +2,7 @@
 
 These keep SQL in **one place** so later refactors (async, raw COPY, etc.) touch only this file.
 """
+
 from collections.abc import Iterable
 from datetime import date
 from contextlib import contextmanager
@@ -12,6 +13,7 @@ from sqlalchemy.orm import Session
 
 from .engine import SessionLocal
 from .models import Repository, RepoStarSnapshot
+
 
 @contextmanager
 def session_scope() -> Iterable[Session]:
@@ -26,7 +28,10 @@ def session_scope() -> Iterable[Session]:
     finally:
         session.close()
 
-def upsert_repository(*, repo_id: int, name_owner: str, language: str | None = None) -> None:
+
+def upsert_repository(
+    *, repo_id: int, name_owner: str, language: str | None = None
+) -> None:
     """Insert new repo or touch `updated_at` if it already exists."""
     stmt = (
         insert(Repository)
@@ -36,6 +41,7 @@ def upsert_repository(*, repo_id: int, name_owner: str, language: str | None = N
     with session_scope() as s:
         s.execute(stmt)
 
+
 def bulk_insert_snapshots(records: list[tuple[int, date, int]]) -> None:
     """Insert many (repo_id, snapshot_date, star_count) rows.
     Ignore duplicates (ON CONFLICT DO NOTHING).
@@ -43,9 +49,16 @@ def bulk_insert_snapshots(records: list[tuple[int, date, int]]) -> None:
     if not records:
         return
 
-    stmt = insert(RepoStarSnapshot).values([
-        {"repo_id": rid, "snapshot_date": d, "star_count": stars} for rid, d, stars in records
-    ]).on_conflict_do_nothing(index_elements=["repo_id", "snapshot_date"])
+    stmt = (
+        insert(RepoStarSnapshot)
+        .values(
+            [
+                {"repo_id": rid, "snapshot_date": d, "star_count": stars}
+                for rid, d, stars in records
+            ]
+        )
+        .on_conflict_do_nothing(index_elements=["repo_id", "snapshot_date"])
+    )
 
     with session_scope() as s:
         s.execute(stmt)

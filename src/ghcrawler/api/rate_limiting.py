@@ -1,8 +1,9 @@
 from asyncio import Lock, sleep
 from time import monotonic
 
+
 class RateLimiter:
-    """Token‑bucket limiter tuned for GitHub GraphQL cost points."""
+    """Token‑bucket limiter tuned for GitHub GraphQL cost points"""
 
     def __init__(self, *, capacity: int, refill_per_min: int):
         self.capacity = capacity
