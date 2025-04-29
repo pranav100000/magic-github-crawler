@@ -17,9 +17,9 @@ class Settings(BaseSettings):
     github_graphql_endpoint: str = "https://api.github.com/graphql"
     request_concurrency: int = 10
 
-    # Rate‑limit bucket
-    bucket_capacity: int = 995
-    bucket_refill_per_min: int = 5000
+    # Rate‑limit bucket (Based on GitHub's standard 5000 points/hour GraphQL limit)
+    bucket_capacity: int = 200
+    bucket_refill_per_hour: int = 5000
 
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
 
