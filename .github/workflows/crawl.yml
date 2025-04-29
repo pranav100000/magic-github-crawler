@@ -1,0 +1,33 @@
+github-crawler/
+├── .github/workflows/
+│   ├── ci.yml
+│   └── crawl.yml
+├── alembic/
+│   └── versions/…
+├── docs/
+│   ├── architecture.md
+│   ├── ERD.png
+│   └── scaling.md
+├── src/ghcrawler/
+│   ├── __init__.py        # __version__ here
+│   ├── config.py
+│   ├── core/
+│   │   └── crawler.py
+│   ├── api/
+│   │   ├── github_client.py
+│   │   └── rate_limiting.py
+│   ├── db/
+│   │   ├── models.py
+│   │   └── dal.py
+│   ├── cli.py
+│   ├── exceptions.py
+│   ├── logging.py
+│   └── metrics.py
+├── tests/…
+├── scripts/…
+├── Makefile
+├── .env.example
+├── .gitignore
+├── pyproject.toml
+├── alembic.ini
+└── README.md

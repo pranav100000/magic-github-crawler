@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling>=1.24"]          # minimal modern backend; uv will build wheels when needed
+build-backend = "hatchling.build"
+
+[project]
+name = "ghcrawler"
+version = "0.1.0"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+readme = "README.md"
+
+dependencies = [
+    "pydantic-settings~=2.2",
+    "psycopg[binary,pool]~=3.1",
+    "SQLAlchemy~=2.0",
+    "alembic~=1.13",
+    "python-dotenv~=1.0",
+    "psycopg2>=2.9.10",
+]
+
+[project.optional-dependencies]
+# Dev / tooling extras
+dev = [
+    "pytest~=8.1",
+    "pytest-docker~=3.2",
+    "vcrpy~=6.0",
+    "ruff~=0.4",
+    "black~=24.2",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ghcrawler"]
